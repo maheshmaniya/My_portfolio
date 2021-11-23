@@ -1,0 +1,139 @@
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 95%;
+    }
+    .title,
+    .headerBody {
+        font-size: 20px !important;
+    }
+    .closeBtn .title::before,
+    .headerBody::after {
+        font-size: 75px !important;
+        top: 10% !important;
+    }
+
+    .headerPortfolio {
+        font-size: 18px !important;
+    }
+
+    .headerPortfolio::after {
+        top: 0 !important;
+        font-size: 90px !important;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .container {
+        max-width: 760px;
+    }
+    .leftSec .contentData {
+        display: block;
+    }
+    .mainBody {
+        height: auto !important;
+    }
+    .secondSectionContact {
+        display: block !important;
+        margin-top: 15px !important;
+    }
+    .secondSectionContact .leftSecContact,
+    .rightSecContact {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+
+    .lastDiv {
+        display: block !important;
+    }
+
+    .rightSecContact {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .firstLine,
+    .secondLine,
+    .thirdLine {
+        width: 100% !important;
+    }
+
+    .lastDiv ul {
+        width: 96% !important;
+        justify-content: center !important;
+        padding: 10px 0 !important;
+    }
+
+    .lastDiv .btnDiv {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .content {
+        display: block;
+    }
+    .content .leftSection {
+        margin: 30px;
+        width: 100%;
+    }
+
+    .content .rightSection {
+        width: 100%;
+    }
+
+    .squre img {
+        z-index: -1;
+        bottom: 8%;
+    }
+
+    .modalContaint {
+        width: 85%;
+    }
+
+    .rightSection .rectangle,
+    .rightSection .circle {
+        display: none;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+    .closeBtn .title::before {
+        font-size: 110px;
+        top: 5%;
+    }
+
+    .sectionMain {
+        display: block;
+    }
+    .sectionMain,
+    .leftSec,
+    .rightSec {
+        width: 100%;
+    }
+
+    .leftSec ul {
+        display: block;
+    }
+
+    .educationFirst {
+        display: block;
+    }
+    .educationFirst,
+    .EduLeft {
+        width: 100%;
+    }
+    /* .rightSec, */
+    /* .contentDiv {
+        margin: 10px 0px;
+    } */
+}
+
+@media only screen and (max-width: 1200px) {
+    .rightSec,
+    .contentDiv {
+        margin: 10px 0px;
+    }
+}

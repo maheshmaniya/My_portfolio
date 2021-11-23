@@ -1,0 +1,454 @@
+.home {
+    padding: 50px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.rightSection {
+    width: 50%;
+    position: relative;
+}
+
+.personalImg {
+    text-align: center;
+}
+
+.personalImg img {
+    height: 85%;
+    border-radius: 51px;
+    width: 72%;
+    object-fit: cover;
+}
+.rectangle Img {
+    position: absolute;
+    top: 22%;
+    right: 0;
+    opacity: 0.7;
+}
+
+.circle img {
+    position: absolute;
+    bottom: 15%;
+    right: 67%;
+}
+
+.leftSection {
+    position: relative;
+    width: 50%;
+}
+
+.squre img {
+    position: absolute;
+    bottom: 10%;
+}
+
+.subTitle {
+    margin-top: 10px;
+}
+
+.subTitle h2 {
+    margin-left: 38px;
+}
+
+.leftSection h1 {
+    position: relative;
+    padding: 0 38px;
+}
+.leftSection h1::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    z-index: 1;
+    background: black;
+    left: 0;
+    height: 4px;
+    width: 30px;
+    border-radius: 10px;
+}
+.introduction {
+    padding: 20px 38px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.introduction p {
+    position: relative;
+    padding-left: 1rem;
+    color: black;
+    margin: 2rem 0;
+}
+
+.introduction p::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -10px;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-top: 70px solid #f5dff1;
+    border-right: 70px solid transparent;
+}
+
+.introduction p::before {
+    position: absolute;
+    content: "";
+    right: 10px;
+    bottom: 0px;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-bottom: 70px solid #f5dff1;
+    border-left: 70px solid transparent;
+}
+
+.leftSection h1 {
+    color: darkblue;
+}
+
+.btnDiv {
+    padding: 20px 30px;
+}
+
+.btnDiv button {
+    padding: 16px 30px 16px 35px;
+    border-radius: 38px;
+    border: 1px solid black;
+    font-size: 18px;
+    display: flex;
+    background: black;
+    color: cornsilk;
+    align-items: center;
+}
+
+.btnDiv button span {
+    margin-left: 26px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 8px;
+    background: cornsilk;
+    color: black;
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgb(123 123 119);
+    top: 0;
+    left: 0;
+}
+
+.modalContaint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #111;
+    height: 65%;
+    width: 65%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px -10px;
+    overflow: auto;
+}
+
+.modalContaint::-webkit-scrollbar {
+    width: 10px;
+}
+
+.modalContaint::-webkit-scrollbar-thumb {
+    background: #ffb400;
+    border-radius: 20px;
+}
+
+.closeBtn {
+    position: relative;
+}
+
+.title span {
+    color: #ffb400;
+}
+.closeBtn button {
+    padding: 10px;
+    border: none;
+    background: #111;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.closeBtn .title {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    padding: 30px 0;
+    font-size: 30px;
+    position: relative;
+}
+
+.closeBtn .title::before {
+    position: absolute;
+    content: "RESUME";
+    z-index: -1;
+    font-size: 120px;
+    top: 0%;
+    opacity: 0.5;
+    color: hsla(0, 0%, 100%, 0.36);
+}
+
+.sectionMain {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    color: aliceblue;
+}
+
+.leftSec {
+    width: 50%;
+}
+
+.rightSec {
+    width: 50%;
+}
+
+.firstDiv {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secondDiv {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 28px;
+}
+
+.rightSec .contentDiv {
+    border: 3px solid #555555;
+    padding: 15px;
+    height: 100px;
+    width: 190px;
+}
+
+.rightSec .data {
+    padding: 0px 0px 10px 50px;
+}
+
+.rightSec .data p {
+    position: relative;
+}
+.rightSec .data p::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 6px;
+    left: -42px;
+    background: #afaba6;
+    height: 1px;
+    width: 30px;
+}
+
+.contentDiv h3 {
+    font-size: 50px;
+    color: #ffb400;
+    padding-left: 10px;
+}
+
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+
+.percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.percent .number h2 {
+    color: #777;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.card:hover .percent .number h2 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.percent .number h2 span {
+    font-size: 24px;
+    color: #777;
+}
+
+.card:hover .percent .number h2 span {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.text {
+    position: relative;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+}
+
+.card:hover .text {
+    color: #fff;
+}
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card .MongoDB {
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke: #ffb400;
+}
+.card .Node {
+    stroke-dashoffset: calc(440 - (440 * 65) / 100);
+    stroke: #ffb400;
+}
+.card .Css {
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke: #ffb400;
+}
+.card .JavaScript {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #ffb400;
+}
+.card .ReactJs {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #ffb400;
+}
+.card .Html {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #ffb400;
+}
+
+.leftSec .contentData {
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-around;
+    color: #bab6b6;
+}
+
+.leftSec ul {
+    padding: 0;
+}
+
+.leftSec li {
+    margin-left: 19px;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.leftSec span {
+    color: #fff;
+}
+
+.secondSection,
+.EducationDiv {
+    margin-top: 130px;
+    color: aliceblue;
+}
+
+.secondTitle,
+.educationTitle {
+    display: flex;
+    justify-content: center;
+}
+.skill {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.educationFirst {
+    display: flex;
+}
+
+.EduLeft {
+    width: 50%;
+    margin: 35px 15px;
+    position: relative;
+}
+
+.EduLeft span {
+    margin-left: 28px;
+    background: #252525;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.eduTitle {
+    display: flex;
+    align-items: center;
+}
+
+.eduTitle i {
+    background: darkgoldenrod;
+    padding: 14px;
+    border-radius: 59px;
+}
+
+.eduDetails {
+    padding-left: 74px;
+}
+
+.eduDetails h3 {
+    padding: 8px 0;
+}
+.EduLeft::after {
+    position: absolute;
+    background: chocolate;
+    height: 100%;
+    width: 2px;
+    left: 22px;
+    content: "";
+    top: 0;
+    z-index: -1;
+}

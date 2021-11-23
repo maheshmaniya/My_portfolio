@@ -1,0 +1,97 @@
+.headerPortfolio span {
+    color: #ffb912;
+}
+
+.headerPortfolio {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-size: 30px;
+    position: relative;
+}
+
+.headerPortfolio::after {
+    position: absolute;
+    content: "WORKS";
+    z-index: 1;
+    font-size: 132px;
+    top: -6%;
+    opacity: 0.5;
+    color: hsl(0deg 0% 0% / 0.36);
+}
+
+.cardPort {
+    width: 280px;
+    height: 235px;
+    margin: 30px 35px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    -webkit-transform: perspective(500);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+}
+.cardPort:hover {
+    -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em);
+}
+.cardPort img {
+    background-color: #222;
+    box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
+    display: block;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: 0.5s;
+}
+.cardPort:hover img {
+    box-shadow: none;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    text-align: initial;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: 100% 0;
+    -webkit-transition: 0.5s;
+}
+.cardPort:hover figcaption {
+    box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
+}
+
+.cardPort span {
+    display: block;
+    margin-top: 10px;
+    padding: 12px;
+    white-space: nowrap;
+}
+
+.cardPort i {
+    margin-right: 10px;
+}
+.cardPort i:hover {
+    color: #ffb912;
+    transform: scale(1.2);
+}
+
+.cardPort a {
+    color: white;
+    display: inline-block;
+    transform: scale(1);
+}
+
+.cardPort a:hover {
+    color: #ffb912;
+}
+
+.firstSecPort {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.cardPort .titlePort {
+    border-bottom: 1px solid #ffb912;
+}

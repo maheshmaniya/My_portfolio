@@ -1,0 +1,147 @@
+.headerBody span {
+    color: #ffb912;
+}
+
+.headerBody {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-size: 30px;
+    position: relative;
+}
+
+.headerBody::after {
+    position: absolute;
+    content: "CONTACT";
+    z-index: 1;
+    font-size: 120px;
+    top: 0%;
+    opacity: 0.5;
+    color: hsl(0deg 0% 0% / 0.36);
+}
+
+.secondSectionContact {
+    margin-top: 40px;
+    display: flex;
+}
+.leftSecContact {
+    width: 40%;
+    padding: 0px 35px;
+    box-sizing: border-box;
+}
+
+.rightSecContact {
+    width: 60%;
+}
+
+.firstLine,
+.secondLine,
+.thirdLine {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.firstLine input {
+    width: 47%;
+    border-radius: 100px;
+    padding: 20px 20px;
+    background: #2b2a2a;
+    /* margin: 0px 15px; */
+    border: none;
+    box-sizing: border-box;
+}
+
+.secondLine input {
+    width: 100%;
+    border-radius: 100px;
+    padding: 20px 20px;
+    background: #2b2a2a;
+    margin: 20px 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.thirdLine textarea {
+    padding: 80px 10px;
+    width: 100%;
+    background: #2b2a2a;
+    margin: 5px 0;
+    border-radius: 30px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.leftSecContact .address {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.address i {
+    margin-right: 20px;
+    font-size: 30px;
+    color: #ffb912;
+}
+
+.leftSecContact h1 {
+    margin: 10px 0px 20px;
+}
+
+.leftSecContact p {
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.leftSecContact h3 {
+    color: #8f8f8f;
+}
+
+.lastDiv {
+    display: flex;
+    align-items: center;
+}
+
+.lastDiv ul {
+    padding: 10px 8px;
+    width: 38%;
+    display: flex;
+}
+
+.lastDiv li {
+    background: #2b2a2a;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.lastDiv li:hover {
+    background: black;
+    color: white;
+}
+
+.btnDiv {
+    padding: 20px 30px;
+}
+
+.btnDiv button {
+    padding: 12px 30px 12px 35px;
+    border-radius: 38px;
+    border: 1px solid black;
+    font-size: 18px;
+    display: flex;
+    background: black;
+    color: cornsilk;
+    align-items: center;
+}
+
+.btnDiv button span {
+    margin-left: 26px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 8px;
+    background: cornsilk;
+    color: black;
+}
